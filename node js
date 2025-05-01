@@ -1,0 +1,20 @@
+1. create folder assignment 6 and open it is vs code 
+2. open cmd
+-> npm init (keep entering this will create pacakage.json file)
+3. create directly index.js
+4. cmd -> npm install express --save (this will create node_module file)
+5. In index.js
+
+const express = require('express');
+const app = express();
+app.use(express.static('public'))
+app.listen(40000,() => {
+console.log("server is started ");
+})
+
+6. create new folder public and create file index.html file 
+7. to run code node index.js
+8. go to browser type localhost:4000
+
+
+
