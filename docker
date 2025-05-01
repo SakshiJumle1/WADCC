@@ -1,0 +1,20 @@
+#for java 
+lsb_release -a
+sudo apt-get update
+sudo apt install docker.io
+sudo usermod -aG docker $USER
+sudo docker pull openjdk
+jshell
+System.out.println(“Hello”);
+
+
+#for python
+sudo docker pull python:3.10-slim
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo docker run hello-world
+sudo docker run -it –rm python:latest
+print(“hello”)
+sudo docker ps
+sudo docker images
+
