@@ -1,0 +1,17 @@
+create instance , generate key , select Amazon linux , add security grp as http and sourse code as 0.0.0.0/0 . then launch
+
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl status httpd
+
+sudo dnf update -y
+sudo dnf install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl status httpd
+
+sudo nano /var/www/html/index.html
+
+NOW CLICK ON CONNECT -> HTML CODE -> CTRL O -> ENTER -> CTRL X -> REFERESH IP
