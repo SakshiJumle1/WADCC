@@ -1,0 +1,4 @@
+run the following commands after intance creation and key generation and then connect
+sudo apt-get update
+sudo apt-get install apache2
+sudo systemctl status apache2
