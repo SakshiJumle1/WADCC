@@ -37,8 +37,6 @@
   </script>
 </body>
 </html>
-
-
 #################################list.html#########################################################3
 <!DOCTYPE html>
 <html lang="en">
@@ -56,8 +54,7 @@
     </thead>
     <tbody id="userTable"></tbody>
   </table>
-
-  <script>
+<script>
     const users = JSON.parse(localStorage.getItem("users") || "[]");
     const table = document.getElementById("userTable");
 
@@ -69,3 +66,25 @@
   </script>
 </body>
 </html>
+#########################################################################################################
+display the output on the vagrant machine (ubuntu 22.04)
+
+In ubuntu terminal
+sudo apt update
+sudo apt install nodejs npm
+sudo npm install -g http-server
+
+mkdir user_registration && cd user_registation
+nano index.html (paste your code here)
+ctrl o
+enter
+ctrl x
+nano list.html (paste list code here)
+ctrl o
+enter
+ctrl x
+
+http-sender -p 8080
+
+
+
