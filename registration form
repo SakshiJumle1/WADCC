@@ -84,7 +84,7 @@ ctrl o
 enter
 ctrl x
 
-http-sender -p 8080
+http-server -p 8080
 
 
 
