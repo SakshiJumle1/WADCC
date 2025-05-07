@@ -43,3 +43,36 @@ this.displayemail = email;
 this.displaycontact = contact; 
 } 
 }
+
+###########################################################################
+Deploy the script on Google Cloud Environment.
+
+#for installing sdk https://cloud.google.com/sdk/docs/install  -> gcloud init
+
+#Create a Google Cloud Project -> Go to:https://console.cloud.google.com -> Create Project" ->  name (e.g., angular-app) -> Note the Project ID
+
+Then in terminal -> gcloud config set project YOUR_PROJECT_ID
+
+ng build --configuration production
+npm install express
+
+#Create server.js in root (outside src/):
+const express = require('express');
+const path = require('path');
+const app = express();
+app.use(express.static(__dirname + '/dist/partC'));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/partC/index.html'));
+});
+app.listen(process.env.PORT || 8080);
+
+#Create app.yaml in root
+runtime: nodejs18
+instance_class: F1
+env: standard
+
+#Deploy to App Engine
+gcloud app deploy
+
+#Open Your App
+gcloud app browse
