@@ -16,5 +16,26 @@ console.log("server is started ");
 7. to run code node index.js
 8. go to browser type localhost:4000
 
+#############################################################
+Create an EC2 Instance:
+Log in to AWS Console.
+Go to EC2 Dashboard and click "Launch Instance."
+Choose an Amazon Machine Image (AMI) like Ubuntu or Amazon Linux.
+Select an instance type (t2.micro for free tier).
+Configure instance details (default settings are usually fine).
+Add storage if needed (default is fine for small apps).
+Set up a key pair for SSH access.
+Open ports 22 (SSH) and 80 (HTTP) in the security group.
+Launch the instance.
 
+ssh -i your-key.pem ubuntu@your-instance-public-ip
+sudo apt update
+sudo apt install nodejs npm -y
+scp -i your-key.pem -r /path/to/your/project ubuntu@your-instance-public-ip:/home/ubuntu
+cd /home/ubuntu/your-project
+npm install
+node index.js
+
+Access your website:
+Open a browser and enter the EC2 public IP or domain name (e.g., http://your-instance-public-ip:4000).
 
