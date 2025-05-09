@@ -19,7 +19,7 @@ nano sakshi.txt (enter data in file)
 ctrl s
 ctrl x
 cat sakshi.txt
-scp sakshi.txt vagrant@10.0.2.16:/hone/vagrant
+scp sakshi.txt vagrant@10.0.2.16:/home/vagrant
 
 
 VM2
