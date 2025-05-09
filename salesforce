@@ -1,3 +1,5 @@
+custom obj -> feilds and relationship -> tabs -> app manager -> search app name 
+
 NOT(REGEX(Phone__c, "^[0-9]{10}$"))
 
 
