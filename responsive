@@ -235,11 +235,11 @@
 display the output on the local Virtual Machine OS(ubuntu 22.04)
 -> TERMINAL OF UBUNTU
 
-sudo apt update && sudo apt upgrade -y  //Update system:
-sudo apt install apache2 -y //Install Apache:
-cd /var/www/html //Go to web root:
-sudo rm index.html //(Optional) Remove default page:
-sudo nano dashboard.html //Create HTML file:
+sudo apt update && sudo apt upgrade -y  
+sudo apt install apache2 -y 
+cd /var/www/html
+sudo rm index.html 
+sudo nano dashboard.html 
 (Paste your HTML, then press Ctrl+O, Enter, Ctrl+X)
-sudo chmod 644 dashboard.html //Set permissions:
-Go to http://localhost/dashboard.html //Open in browser:
+sudo chmod 644 dashboard.html
+Go to http://localhost/dashboard.html 
