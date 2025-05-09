@@ -35,10 +35,10 @@ git add .
 git status
 git remote add origin “http link of repo which we have created”
 git commit -m “first commit”
+git config --global user.name "SakshiJumle"
+git config --global user.email "sakshi.jumle111@gmail.com"
 git status
 git push -u origin master
 
 
-
-to add more such files we can use git add . command 
 
