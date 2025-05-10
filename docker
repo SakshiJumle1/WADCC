@@ -27,7 +27,7 @@ sudo docker pull python
 sudo docker run --name PYTHON -it -d python
 sudo docker exec -it PYTHON python3
 print("Heloo world")
-/exit
+exit()
 sudo docker start (type container_id given )
 sudo docker stop (type container_id given )
 sudo docker rm (type container_id  given ) python
