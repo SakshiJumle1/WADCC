@@ -9,8 +9,8 @@ new -> VM2 ->  Linnux -> Ubuntu(64 bit) ->use existing virtual hard disk file ->
 4. open both machines
 
 VM1
-vagrant
-vagrant
+user : vagrant
+pass : vagrant
 ifconfig (note inet)
 ls
 touch sakshi.txt
@@ -23,5 +23,6 @@ scp sakshi.txt vagrant@10.0.2.16:/home/vagrant
 
 
 VM2
+ifconfig
 ls
 cat sakshi.txt
