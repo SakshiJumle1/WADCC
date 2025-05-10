@@ -1,23 +1,4 @@
-#for java 
-lsb_release -a
-sudo apt-get update
-sudo apt install docker.io
-sudo usermod -aG docker $USER
-sudo docker pull openjdk
-jshell
-System.out.println(“Hello”);
 
-#for python
-sudo docker pull python:3.10-slim
-sudo groupadd docker
-sudo usermod -aG docker $USER
-sudo docker run hello-world
-sudo docker run -it –rm python:latest
-print(“hello”)
-sudo docker ps
-sudo docker images
-
-##############################################################3
 //JAVA
 sudo apt update
 sudo apt install docker.io
@@ -29,35 +10,24 @@ sudo images
 sudo docker ps
 sudo docker pull openjdk
 sudo docker run --name JAVA -it -d openjdk
-
 sudo docker exec -it JAVA jshell
 //jshell
-
 System.out.println("Hello");
-int a = 10;
-int b = 20;
-System.out.println(a+b);
 /exit
-
 sudo docker ps
 sudo docker stop (type container_id given )
 sudo docker rm (type container_id  given )
 sudo docker rmi (image name given) openjdk
 
-//PYTHON
 
+
+//PYTHON
 sudo docker ps
 sudo docker pull python
 sudo docker run --name PYTHON -it -d python
 sudo docker exec -it PYTHON python3
-
 print("Heloo world")
-a=5
-b=4
-sum=a+b
-print("The sum is:",sum)
 /exit
-
 sudo docker start (type container_id given )
 sudo docker stop (type container_id given )
 sudo docker rm (type container_id  given ) python
